@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# React Router Lab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+In this lab, you'll be utilizing React Router to create a multi page app. Two json files have been provided for you in the `src/data` folder. `React Router` has been installed in this project for you.
 
-In the project directory, you can run:
+## Getting Started
 
-### `yarn start`
+- Fork and Clone
+- `npm i` or `npm install`
+- `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Requirements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- You must have a page to display when your app loads. The `url` for this component should be `/`.
+- You must have a page to display all games. The `url` for this component should be `/games`.
+- You must have a page to display all genres. The `url` for this component should be `/genres`.
+- You must have a page to display the details about a game. The `url` for this component should be `/games/:game_id`.
+- Your app must be styled
 
-### `yarn test`
+## Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Set up your `BrowserRouter` in the `index.js` file.
+2. Create a `Home` component. This component can display anything you'd like.
+3. Create a `Games` component. Load your `games.json` file into this component. Set up a `componentDidMount` and set the items inside of `games.json` to state.
+   Map through your games in state and display them on the page.
+4. Create a `GameDetails` component that has a more detailed view of a game. You'll want to capture the `id` in the url bar. Set up some state for this component that looks like the following:
 
-### `yarn build`
+   ```js
+   this.state = {
+       gameId: // should be the id in the url bar,
+       game: null // Should be null to start and later becomes an object with the selected game.
+   }
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   - You'll want to access props in the `constructor` and get the `id` from react routers props
+   - Add a `comonentDidMount` to this component. You should use a `higher order array method` to find a movie where the id matches what is in state. You may need to parse the id into an integer.
+   - Display the selected movie in this component.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. In `App.js`:
+   - Import the provided `Nav` component.
+   - Set up a `switch` for your routes.
+   - Add in the routes for each page according to the requirements above.
+6. Style your app! Create a `css` file in the `styles` folder.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Resources
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React Router Docs](https://reactrouter.com/web/guides/quick-start)
+- [React Router Lesson](https://github.com/SEI-R-1-25/u2_lesson_react_router)
+- [React Router Props](https://reactrouter.com/web/api/match)
