@@ -12,7 +12,7 @@ export default class GameDetails extends Component {
 
   componentDidMount() {
     let game = games.find((game) => game.id === parseInt(this.state.gameId))
-    this.setState({ game })
+    setTimeout(() => this.setState({ game }), 1500)
   }
 
   render() {
