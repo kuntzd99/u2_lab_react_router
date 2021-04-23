@@ -48,5 +48,5 @@ In this lab, you'll be utilizing React Router to create a multi page app. Two js
 ## Resources
 
 - [React Router Docs](https://reactrouter.com/web/guides/quick-start)
-- [React Router Lesson](https://github.com/SEI-R-1-25/u2_lesson_react_router)
+- [React Router Lesson](https://github.com/SEI-R-4-26/u2_lesson_react_router)
 - [React Router Props](https://reactrouter.com/web/api/match)
