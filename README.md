@@ -35,7 +35,7 @@ In this lab, you'll be utilizing React Router to create a multi page app. Two js
    ```
 
    - You'll want to access props in the `constructor` and get the `id` from react routers props
-   - Add a `comonentDidMount` to this component. You should use a `higher order array method` to find a movie where the id matches what is in state. You may need to parse the id into an integer.
+   - Add a `componentDidMount` to this component. You should use a `higher order array method` to find a movie where the id matches what is in state. You may need to parse the id into an integer.
    - Display the selected movie in this component.
 
 6. In `App.js`:
