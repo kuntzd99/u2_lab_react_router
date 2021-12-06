@@ -1,5 +1,7 @@
 # React Router Lab
 
+![Directions](https://cdn.pixabay.com/photo/2017/07/27/04/15/directions-2543956_640.png)
+
 ## Overview
 
 In this lab, you'll be utilizing React Router to create a multi page app. Two json files have been provided for you in the `src/data` folder. `React Router` has been installed in this project for you.  This lab was built with *functional components*.
