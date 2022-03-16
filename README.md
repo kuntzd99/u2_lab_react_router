@@ -35,7 +35,7 @@ In this lab, you'll be utilizing React Router to create a multi page app. Two js
    const [game, setGame] = useState(null) // Should be null to start and later becomes an object with the selected game.
    ```
 
-   - You'll want to access props and get the `id` from react routers props
+   - You'll want to access get the `id` from React Router's `useParams` hook.
    - Add a `useEffect` to this component. You should use a `higher order array method` to find a movie where the id matches what is in state. You may need to parse the id into an integer.
    - Display the selected movie in this component.
 
@@ -48,5 +48,5 @@ In this lab, you'll be utilizing React Router to create a multi page app. Two js
 
 ## Resources
 
-- [React Router Docs](https://reactrouter.com/web/guides/quick-start)
-- [React Router Props](https://reactrouter.com/web/api/match)
+- [React Router Docs](https://reactrouter.com/docs/en/v6)
+- [React Router useParams](https://reactrouter.com/docs/en/v6/api#useparams)
