@@ -16,9 +16,9 @@ In this lab, you'll be utilizing React Router to create a multi page app. Two js
 ## Requirements
 
 - You must have a page to display when your app loads. The `url` for this component should be `/`.
-- You must have a page to display all games. The `url` for this component should be `/games`.
-- You must have a page to display all genres. The `url` for this component should be `/genres`.
-- You must have a page to display the details about a game. The `url` for this component should be `/games/:game_id`.
+- You must have a page to display all games. The `url` for this component should be `games`.
+- You must have a page to display all genres. The `url` for this component should be `genres`.
+- You must have a page to display the details about a game. The `url` for this component should be `games/:game_id`.
 - **Your app must be styled**
 
 ## Instructions
@@ -41,9 +41,9 @@ In this lab, you'll be utilizing React Router to create a multi page app. Two js
 
 6. In `App.js`:
    - Import the provided `Nav` component and add it to your `App.js`. This component should be used before any routes. NOTE: This component **will not work** until *after* you've set up `BrowserRouter` in the `index.js` file.
-   - Set up a `<Switch/>` for your routes.
+   - Set up a `<Routes/>` for your routes.
    - Add in the routes for each page according to the requirements above.
-   - Don't forget to import `Route` and `Switch`: **`import { Route, Switch } from 'react-router-dom'`**
+   - Don't forget to import `Routes` and `Route`: **`import { Routes, Route } from 'react-router-dom'`**
 7. Style your app! Create a `css` file in the `styles` folder.
 
 ## Resources
