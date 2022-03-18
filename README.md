@@ -11,6 +11,7 @@ In this lab, you'll be utilizing React Router to create a multi page app. Two js
 - `fork` and `clone` this repository
 - `cd` into the repo directory
 - `npm i` or `npm install` to install our dependencies
+- In this case, `react-router-dom` has already been added to the package.json, so is installed with your `npm install`
 - `npm start` to spin up our app
 
 ## Requirements
