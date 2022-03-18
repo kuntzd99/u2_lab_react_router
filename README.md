@@ -11,15 +11,14 @@ In this lab, you'll be utilizing React Router to create a multi page app. Two js
 - `fork` and `clone` this repository
 - `cd` into the repo directory
 - `npm i` or `npm install` to install our dependencies
-- In this case, `react-router-dom` has already been added to the package.json, so is installed with your `npm install`
 - `npm start` to spin up our app
 
 ## Requirements
 
 - You must have a page to display when your app loads. The `url` for this component should be `/`.
-- You must have a page to display all games. The `url` for this component should be `/games`.
-- You must have a page to display all genres. The `url` for this component should be `/genres`.
-- You must have a page to display the details about a game. The `url` for this component should be `/games/:game_id`.
+- You must have a page to display all games. The `url` for this component should be `games`.
+- You must have a page to display all genres. The `url` for this component should be `genres`.
+- You must have a page to display the details about a game. The `url` for this component should be `games/:game_id`.
 - **Your app must be styled**
 
 ## Instructions
@@ -36,18 +35,18 @@ In this lab, you'll be utilizing React Router to create a multi page app. Two js
    const [game, setGame] = useState(null) // Should be null to start and later becomes an object with the selected game.
    ```
 
-   - You'll want to access props and get the `id` from react routers props
+   - You'll want to access get the `id` from React Router's `useParams` hook.
    - Add a `useEffect` to this component. You should use a `higher order array method` to find a movie where the id matches what is in state. You may need to parse the id into an integer.
    - Display the selected movie in this component.
 
 6. In `App.js`:
    - Import the provided `Nav` component and add it to your `App.js`. This component should be used before any routes. NOTE: This component **will not work** until *after* you've set up `BrowserRouter` in the `index.js` file.
-   - Set up a `<Switch/>` for your routes.
+   - Set up a `<Routes/>` for your routes.
    - Add in the routes for each page according to the requirements above.
-   - Don't forget to import `Route` and `Switch`: **`import { Route, Switch } from 'react-router-dom'`**
+   - Don't forget to import `Routes` and `Route`: **`import { Routes, Route } from 'react-router-dom'`**
 7. Style your app! Create a `css` file in the `styles` folder.
 
 ## Resources
 
-- [React Router Docs](https://reactrouter.com/web/guides/quick-start)
-- [React Router Props](https://reactrouter.com/web/api/match)
+- [React Router Docs](https://reactrouter.com/docs/en/v6)
+- [React Router useParams](https://reactrouter.com/docs/en/v6/api#useparams)
